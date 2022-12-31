@@ -25,6 +25,22 @@ ul {
   list-style: none;
 }
 
+#gototop {
+  position: fixed;
+  background: #063183;
+  color: #f9f9f9;
+  font-size: 2.4rem;
+  right: 25px;
+  bottom: 70px;
+  z-index: 999999;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 53px;
+  opacity: 0.8;
+}
+
 .btn {
   display: inline-block;
   min-width: 98px;
@@ -182,6 +198,7 @@ ul {
 .clients .images > img {
   padding: 12px 16px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .clients .images > img:hover {
