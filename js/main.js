@@ -39,7 +39,7 @@ $(document).ready(function () {
       if (homeSoldTimer === null)
         homeSoldTimer = startData(homeSold, 40, 5000, "sold");
       if (priceReducedTimer === null)
-        priceReducedTimer = startData(priceReduced, 1, 170, "reduced");
+        priceReducedTimer = startData(priceReduced, 2, 170, "reduced");
     }
   });
 });
