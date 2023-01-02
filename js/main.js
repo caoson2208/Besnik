@@ -1,4 +1,3 @@
-
 /*-----------------------------------
               RUN DATA
 -----------------------------------*/
@@ -37,3 +36,28 @@ function startData(element, steps, max, type) {
       }
     }, 10);
 }
+/*-----------------------------------
+        FOR
+-----------------------------------*/ 
+const from = document.querySelector(".js-form");
+const modal = document.querySelector(".js-modal");
+const modalContainer = document.querySelector(".js-modal-container");
+
+// Hàm hiến thị modal (thêm class open vào modal)
+function showFrom() {
+  modal.classList.add("open");
+}
+
+// Hàm ấn modal (gỡ bỏ class open của modal)
+function hideFrom() {
+  modal.classList.remove("open");
+}
+
+//Nghe hành vi click
+from.addEventListener("click", showFrom);
+
+modal.addEventListener("click", hideFrom);
+
+modalContainer.addEventListener("click", function (event) {
+  event.stopPropagation();
+});

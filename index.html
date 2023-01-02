@@ -8,6 +8,7 @@
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -46,7 +47,7 @@
             <!-- Action -->
             <div class="actions">
               <a href="#!" class="action-link">Sign in</a>
-              <a href="#!" class="btn action-btn">Sign up</a>
+              <a href="#!" class="btn action-btn js-form">Sign up</a>
             </div>
           </nav>
         </div>
@@ -537,6 +538,85 @@
         </div>
       </footer>
     </main>
+
+    <!-- Form Sign Up-->
+    <div class="container-form js-modal">
+      <form
+        action=""
+        method="POST"
+        class="form js-modal-container"
+        id="register-form"
+      >
+        <h3 class="heading">Sign Up</h3>
+
+        <div class="spacer"></div>
+
+        <div class="form-group">
+          <label for="fullname" class="form-label">Full name</label>
+          <input
+            id="fullname"
+            name="fullname"
+            type="text"
+            placeholder="Example: Sơn Cao"
+            class="form-control"
+            rules="required"
+          />
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="Example: email@gmail.com"
+            value="email@gmail.com"
+            class="form-control"
+            rules="required|email"
+          />
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Enter password"
+            class="form-control"
+            rules="required|min:6"
+          />
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password_confirmation" class="form-label"
+            >Enter the password</label
+          >
+          <input
+            id="password_confirmation"
+            name="password_confirmation"
+            placeholder="Enter the password"
+            type="password"
+            class="form-control"
+            rules="required|min:6"
+          />
+          <span class="form-message"></span>
+        </div>
+
+        <button class="form-submit">Sign Up</button>
+      </form>
+    </div>
     <script src="./js/main.js"></script>
+    <script src="./js/validation.js"></script>
+
+    <script>
+      var registerForm = new Validator("#register-form");
+      registerForm.onSubmit = function (formData) {
+        console.log(formData);
+      };
+    </script>
   </body>
 </html>
