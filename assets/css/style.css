@@ -75,8 +75,18 @@ ul {
 /* ----------------------
         HEADER
 ------------------------*/
-.header {
+.fixed-header {
+  background-color: #e6f0ff;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+
+.hero-wrap {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #e6f0ff;
   height: 100vh;
 }
@@ -84,7 +94,7 @@ ul {
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 12px 0;
 }
 
 .navbar__list {
@@ -122,7 +132,7 @@ ul {
 }
 
 .hero {
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
 }
 
