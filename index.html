@@ -20,17 +20,11 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-
     <!-- Icon -->
     <link rel="short icon" href="" />
   </head>
   <body>
-    <main>
+    <main id="home">
       <!-- Header -->
       <header class="fixed-header">
         <div class="content">
@@ -42,11 +36,11 @@
 
             <!-- Navigation -->
             <ul class="navbar__list">
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">Features</a></li>
-              <li><a href="#!">Services</a></li>
-              <li><a href="#!">Resources</a></li>
-              <li><a href="#!">Contact</a></li>
+              <li><a href="#home  ">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
 
             <!-- Action -->
@@ -61,23 +55,21 @@
       <!-- Hero -->
       <div class="hero-wrap">
         <div class="content">
-          <div class="hero">
-            <div class="info">
-              <p class="sub-title">Welcome to Besnik Agency</p>
-              <h1 class="title">Discover a place you'll love to live.</h1>
-              <p class="desc">
-                Get the best real estate deals first, before they hit the mass
-                market! HOT FORECLOSURE DEALS with one simple search
-              </p>
-              <a href="#!" class="btn hero-cta"> More About Us </a>
-            </div>
-
-            <img
-              src="./assets/img/hero-img.svg"
-              alt="Discover a place you'll love to live"
-              class="hero-img"
-            />
+          <div class="info">
+            <p class="sub-title">Welcome to Besnik Agency</p>
+            <h1 class="title">Discover a place you'll love to live.</h1>
+            <p class="desc">
+              Get the best real estate deals first, before they hit the mass
+              market! HOT FORECLOSURE DEALS with one simple search
+            </p>
+            <a href="#!" class="btn hero-cta"> More About Us </a>
           </div>
+
+          <img
+            src="./assets/img/hero-img.svg"
+            alt="Discover a place you'll love to live"
+            class="hero-img"
+          />
         </div>
       </div>
 
@@ -124,7 +116,7 @@
       </div>
 
       <!-- Guides -->
-      <div class="guides">
+      <div id="services" class="guides">
         <div class="content">
           <h2 class="sub-title">How its works?</h2>
           <p class="desc">
@@ -191,7 +183,7 @@
       </div>
 
       <!-- Featured -->
-      <div class="featured">
+      <div id="features" class="featured">
         <div class="content">
           <header>
             <h2 class="sub-title">Featured Properties</h2>
@@ -300,7 +292,7 @@
       </div>
 
       <!-- Stats -->
-      <div class="stats">
+      <div id="resources" class="stats">
         <div class="content">
           <div class="row">
             <div class="img-block">
@@ -444,7 +436,7 @@
       </div>
 
       <!-- Subscription -->
-      <div class="subscription">
+      <div id="contact" class="subscription">
         <div class="content">
           <div class="body">
             <div class="info">
@@ -543,7 +535,6 @@
             <p class="copyright">Copyright 2020.com, All rights reserved.</p>
           </div>
         </div>
-        <a id="gototop" href="#!"><i class="fas fa-angle-up"></i></a>
       </footer>
     </main>
     <script src="./js/main.js"></script>
